@@ -39,7 +39,7 @@ $this->title = 'Склад ООО "Беликова';
         'items' => [
             ['label' => 'Изделия', 'url' => ['/product/index']],
             ['label' => 'Изготовители', 'url' => ['/manufacturer/index']],
-            ['label' => 'Стелажи', 'url' => ['/rack/index']],            
+            ['label' => 'Стелажи', 'url' => ['/shelving/index']],            
         ],
     ]);
     NavBar::end();
