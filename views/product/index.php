@@ -13,7 +13,7 @@ $this->title = Yii::t('app', 'Изделия');
 $this->registerJs('            
             $("#new_product").on("pjax:end", function() {
                 $("#modal_add").modal("hide");
-                $.pjax.reload({container:"#products"});  //Reload GridView
+                $.pjax.reload({container:" #products", timeout: 0});                
             });   
             '
 );

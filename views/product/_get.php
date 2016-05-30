@@ -12,7 +12,7 @@ $this->registerJs('
                     data: $("#form-edit").serialize()
                   });
                 $("#modal_edit").modal("hide");
-                $.pjax.reload({container:"#products"});  //Reload GridView
+                $.pjax.reload({container:"#products", timeout: 0});
                 e.preventDefault();
                 return false;
             });
