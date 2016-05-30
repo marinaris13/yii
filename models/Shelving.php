@@ -5,10 +5,13 @@ namespace app\models;
 use yii\db\ActiveRecord;
 
 class Shelving extends ActiveRecord {
-       public static function tableName() {
+    
+    // переопределяем метод, чтобы изменить имя таблицы
+     public static function tableName() {
         return 'shelving';
     }
 
+    // правила для проверки формы перед отправкой
     public function rules() {
         return [
             [['name', 'whereabouts'], 'required',
@@ -24,6 +27,7 @@ class Shelving extends ActiveRecord {
         ];
     }
     
+    // имена полей
     public function attributeLabels() {
         return [
             'id'   => 'ID',

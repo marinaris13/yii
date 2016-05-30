@@ -6,10 +6,12 @@ use yii\db\ActiveRecord;
 
 class Manufacturer extends ActiveRecord {
 
+    // переопределяем метод, чтобы изменить имя таблицы
     public static function tableName() {
         return 'manufacturer';
     }
 
+    // правила для проверки формы перед отправкой
     public function rules() {
         return [
             [['name', 'city'], 'required',
@@ -25,6 +27,7 @@ class Manufacturer extends ActiveRecord {
         ];
     }
     
+    // имена полей
     public function attributeLabels() {
         return [
             'id'   => 'ID',
